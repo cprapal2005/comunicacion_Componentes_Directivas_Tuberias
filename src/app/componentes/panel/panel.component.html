@@ -1,6 +1,8 @@
-<p>ID: {{libro.id}}</p>
-<p>Titulo: {{libro.titulo}}</p>
-<p>Autor: {{libro.autor}}</p>
-<p>Editorial: {{libro.editorial}}</p>
-<p>Fecha Publicacion: {{libro.fechaPublicacion | date: 'longDate'}}</p>
-<p>Años editado: {{libro.fechaPublicacion}}</p>
+<div [ngClass]=claseDiv>
+    <p>ID: {{libro.id}}</p>
+    <p>Titulo: {{libro.titulo}}</p>
+    <p>Autor: {{libro.autor}}</p>
+    <p>Editorial: {{libro.editorial}}</p>
+    <p>Fecha Publicacion: {{libro.fechaPublicacion | date: 'longDate'}}</p>
+    <p>Años editado: {{libro.fechaPublicacion | anosTotal}}</p>
+</div>

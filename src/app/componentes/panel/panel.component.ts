@@ -8,6 +8,7 @@ import { Libro } from 'src/app/interfaces/libro';
 })
 export class PanelComponent {
 
+  public claseDiv: string = "card card-block w-75 p-3 mx-auto mt-3";
   @Input() libro!: Libro;
 
 }

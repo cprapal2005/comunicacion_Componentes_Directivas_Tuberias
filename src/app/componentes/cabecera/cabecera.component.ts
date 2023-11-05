@@ -8,6 +8,8 @@ import { Component, EventEmitter, Output } from '@angular/core';
 })
 export class CabeceraComponent {
 
+  public claseBoton: string = "btn btn-primary";
+  public claseDiv: string = "card card-block w-75 p-3 mx-auto mt-3";
   @Output() idNumero = new EventEmitter<number>();
 
   emitirValor(idLibro: number) {
